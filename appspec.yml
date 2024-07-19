@@ -1,0 +1,11 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /var/www/html/code-deploy-repo/
+hooks:
+    BeforeInstall:
+      - location: BeforeInstallation.sh
+        timeout: 300
+        runas: root
+
